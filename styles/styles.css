@@ -305,10 +305,18 @@ a:hover {
   background: white !important;
 }
 
+
 .navbar-brand {
   font-size: 1.8rem;
 }
 
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: inline-block;
+  filter: none; /* remove if you want color tint */
+}
 .brand-text {
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -419,4 +427,9 @@ a:hover {
   .hero-actions .btn {
     width: 100%;
   }
+@media (max-width: 576px) {
+  .navbar-logo { width: 32px; height: 32px; }
+  .navbar-brand .brand-text { font-size: 1.1rem; }
 }
+}
+
